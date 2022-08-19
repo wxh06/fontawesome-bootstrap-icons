@@ -1,11 +1,11 @@
-import { open, writeFile } from "node:fs/promises";
-import path from "node:path";
+import { mkdir, open, writeFile } from "node:fs/promises";
+import { join, relative } from "node:path";
 import { WritableStream } from "htmlparser2/lib/WritableStream";
 import icons from "bootstrap-icons/font/bootstrap-icons.json";
 
-const iconPath = path.relative(
+const iconPath = relative(
   process.cwd(),
-  path.join(
+  join(
     require.resolve("bootstrap-icons/font/bootstrap-icons.json"),
     "../../icons"
   )
@@ -24,7 +24,7 @@ function catchENOENT(
 }
 
 const getSvg = (icon: string) =>
-  open(path.join(iconPath, `${icon}.svg`)).then(
+  open(join(iconPath, `${icon}.svg`)).then(
     (f) =>
       new Promise((resolve, reject) => {
         let w: number;
@@ -74,7 +74,13 @@ Promise.all(
     )
   )
   .then(
-    (faIcons) => writeFile("src/index.json", JSON.stringify(faIcons)),
+    async (faIcons) => {
+      await mkdir(join(__dirname, "src"), { recursive: true });
+      await writeFile(
+        join(__dirname, "src/index.json"),
+        JSON.stringify(faIcons)
+      );
+    },
     (err) => {
       console.error(err);
       process.exit(1);
