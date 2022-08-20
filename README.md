@@ -6,6 +6,7 @@
 
 [![codecov](https://codecov.io/gh/wxh06/fontawesome-bootstrap-icons/branch/main/graph/badge.svg)](https://codecov.io/gh/wxh06/fontawesome-bootstrap-icons)
 [![Node.js CI](https://github.com/wxh06/fontawesome-bootstrap-icons/actions/workflows/node.js.yml/badge.svg)](https://github.com/wxh06/fontawesome-bootstrap-icons/actions/workflows/node.js.yml)
+[![Node.js Package](https://github.com/wxh06/fontawesome-bootstrap-icons/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/wxh06/fontawesome-bootstrap-icons/actions/workflows/npm-publish.yml)
 
 Font Awesome SVG Icon Package of [Bootstrap Icons](https://icons.getbootstrap.com/)
 

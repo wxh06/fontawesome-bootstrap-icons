@@ -1,7 +1,7 @@
 {
   "name": "fontawesome-bootstrap-icons",
   "version": "1.0.0",
-  "description": "",
+  "description": "Font Awesome SVG Icon Package of Bootstrap Icons",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -17,12 +17,20 @@
     "icons",
     "svg"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wxh06/fontawesome-bootstrap-icons.git"
+  },
   "author": {
     "name": "汪心禾",
     "email": "wangxinhe06@gmail.com",
     "url": "https://wxh.im/"
   },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wxh06/fontawesome-bootstrap-icons/issues"
+  },
+  "homepage": "https://github.com/wxh06/fontawesome-bootstrap-icons#readme",
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
