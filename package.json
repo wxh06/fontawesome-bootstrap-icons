@@ -6,7 +6,7 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "ts-node build.ts && unbuild",
+    "build": "ts-node build.ts && unbuild && mv src/index.d.ts dist/",
     "prepare": "husky install",
     "test": "jest"
   },

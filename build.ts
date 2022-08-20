@@ -1,4 +1,4 @@
-import { mkdir, open, writeFile } from "node:fs/promises";
+import { mkdir, open, readFile, writeFile } from "node:fs/promises";
 import { join, relative } from "node:path";
 import { WritableStream } from "htmlparser2/lib/WritableStream";
 import icons from "bootstrap-icons/font/bootstrap-icons.json";
@@ -79,6 +79,20 @@ Promise.all(
       await writeFile(
         join(__dirname, "src/index.json"),
         JSON.stringify(faIcons)
+      );
+      await writeFile(
+        join(__dirname, "src/index.d.ts"),
+        (
+          await readFile(join(__dirname, "index.d.ts"))
+        )
+          .toString()
+          .replace(
+            "//",
+            Object.keys(faIcons)
+              .map((icon) => `export const ${icon}: BsIconDefinition;`)
+              .join("\n")
+          )
+          .replace("//", `${Object.keys(faIcons).join(",\n  ")},`)
       );
     },
     (err) => {
