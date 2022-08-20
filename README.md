@@ -1,5 +1,12 @@
 # fontawesome-bootstrap-icons
 
+[![version](https://img.shields.io/npm/v/fontawesome-bootstrap-icons?style=flat-square)](https://www.npmjs.com/package/fontawesome-bootstrap-icons)
+![downloads](https://img.shields.io/npm/dm/fontawesome-bootstrap-icons?style=flat-square)
+[![license](https://img.shields.io/github/license/wxh06/fontawesome-bootstrap-icons?style=flat-square)](https://github.com/wxh06/fontawesome-bootstrap-icons/blob/main/LICENSE)
+
+[![codecov](https://codecov.io/gh/wxh06/fontawesome-bootstrap-icons/branch/main/graph/badge.svg)](https://codecov.io/gh/wxh06/fontawesome-bootstrap-icons)
+[![Node.js CI](https://github.com/wxh06/fontawesome-bootstrap-icons/actions/workflows/node.js.yml/badge.svg)](https://github.com/wxh06/fontawesome-bootstrap-icons/actions/workflows/node.js.yml)
+
 Font Awesome SVG Icon Package of [Bootstrap Icons](https://icons.getbootstrap.com/)
 
 This is an adapter that enables you to use Bootstrap Icons with [Font Awesome](https://fontawesome.com/)'s [SVG component](https://fontawesome.com/docs/web/dig-deeper/svg-core) for Vue.js and React.
@@ -93,3 +100,11 @@ Place the following line in a `.d.ts` type declaration file (in [Remix](https://
 ```typescript
 /// <reference types="fontawesome-bootstrap-icons/types" />
 ```
+
+## Copyright and license
+
+Code and icons are released under the [MIT License](https://opensource.org/licenses/MIT).
+
+- Icons copyright 2019–2022 [Mark Otto (@mdo)](https://github.com/mdo) and the [Bootstrap Authors](https://github.com/twbs/icons/graphs/contributors).
+- Type declaration copyright 2022 Fonticons, Inc.
+- Build scripts copyright 2022 Xinhe Wang.

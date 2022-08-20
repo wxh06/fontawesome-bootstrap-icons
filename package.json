@@ -10,8 +10,18 @@
     "prepare": "husky install",
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "bootstrap",
+    "fontawesome",
+    "icon",
+    "icons",
+    "svg"
+  ],
+  "author": {
+    "name": "汪心禾",
+    "email": "wangxinhe06@gmail.com",
+    "url": "https://wxh.im/"
+  },
   "license": "MIT",
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
