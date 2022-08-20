@@ -10,20 +10,9 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": { "project": "tsconfig.json" },
-  "overrides": [
-    {
-      "files": "build.ts",
-      "env": { "node": true },
-      "rules": {
-        "no-console": "off",
-        "import/no-extraneous-dependencies": [
-          "error",
-          { "devDependencies": true }
-        ]
-      }
-    }
-  ],
   "rules": {
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "no-console": "off",
     "quotes": [
       "error",
       "double",

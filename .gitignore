@@ -130,4 +130,5 @@ dist
 .pnp.*
 
 
+src/index.d.ts
 src/index.json
